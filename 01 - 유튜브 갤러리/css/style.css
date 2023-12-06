@@ -37,13 +37,14 @@ a:hover {
 }
 .video-wrap {
   position: fixed;
-  top: -50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1024px;
   border: 10px solid #000;
   opacity: 0;
   transition: 0.3s;
+  pointer-events: none;
 }
 .video-wrap.active {
   top: 50%;
@@ -57,6 +58,11 @@ a:hover {
   height: 100%;
   border: none;
 }
+.video-title {
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+}
 .btn-close {
   position: absolute;
   top: 0;
@@ -67,6 +73,7 @@ a:hover {
   color: #fff;
   border: none;
   cursor: pointer;
+  pointer-events: auto;
 }
 .wrap {
   height: 100vh;
@@ -83,4 +90,5 @@ a:hover {
   border: 5px solid #000;
   padding: 50px;
   font-weight: 700;
+  cursor: pointer;
 }
