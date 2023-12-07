@@ -13,6 +13,13 @@ li {
 }
 img {
   vertical-align: top;
+  width: 100%;
+}
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  vertical-align: top;
 }
 body {
   font: 1rem/1.6 Pretendard, sans-serif;
@@ -41,14 +48,19 @@ body {
   transition: 0.3s cubic-bezier(0, 0.3, 0, 1.17);
   pointer-events: none;
   /* test */
-  width: 800px;
-  height: 600px;
+  /* width: 800px;
+  height: 600px; */
 }
 .popup.active {
   opacity: 1;
   top: 50%;
   transform: translate(-50%, -50%) skewY(0deg);
   pointer-events: auto;
+}
+.title {
+  text-align: center;
+  color: #f39;
+  padding: 10px;
 }
 .btn-close {
   position: absolute;
